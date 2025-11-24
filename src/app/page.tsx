@@ -1,7 +1,8 @@
-'use client';
-
-import HomeContent from '@/components/HomeContent';
-
 export default function Home() {
-  return <HomeContent />;
+  return (
+    <div>
+      <h1>Test Page</h1>
+      <p>If you see this, it works.</p>
+    </div>
+  );
 }

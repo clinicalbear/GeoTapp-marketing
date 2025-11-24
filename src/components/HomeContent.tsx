@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import RichText from "./RichText";
 
 const stats = [
   {
@@ -455,7 +456,7 @@ export default function HomeContent() {
               >
                 <p className="stat-eyebrow">{item.eyebrow}</p>
                 <h3>{item.title}</h3>
-                <p>{item.description}</p>
+              <RichText html={item.description} />
                 {item.metrics && (
                   <ul className="stat-metrics">
                     {item.metrics.map((metric) => (
@@ -517,7 +518,7 @@ export default function HomeContent() {
               >
                 <p className="story-scroll-eyebrow">{chapter.eyebrow}</p>
                 <h3>{chapter.title}</h3>
-                <p>{chapter.description}</p>
+              <RichText html={chapter.description} />
                 {chapter.points && (
                   <ul className="story-scroll-points">
                     {chapter.points.map((point) => (
