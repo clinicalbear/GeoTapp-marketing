@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  srcDir: 'src',
-};
+// Next.js usa automaticamente la cartella `src/app` senza configurazioni extra.
+// Rimuoviamo la chiave non supportata `srcDir`.
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
